@@ -1,0 +1,50 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="tpa.content">
+
+  <includeDependencies package="." />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+<!--  <include package=".behavior" /> -->
+
+  <genericsetup:registerProfile
+      name="default"
+      title="tpa.content"
+      directory="profiles/default"
+      description="Installs the tpa.content add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="tpa.content-postInstall"
+      title="tpa.content post_install import step"
+      description="Post install import step from tpa.content"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="tpa.content"
+      directory="profiles/uninstall"
+      description="Uninstalls the tpa.content add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="tpa.content-uninstall"
+      title="tpa.content uninstall import step"
+      description="Import step run during ininstalling tpa.content"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="tpa.content-hiddenprofiles" />
+
+</configure>
