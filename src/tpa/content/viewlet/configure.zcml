@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="tpa.content">
+
+    <browser:viewlet
+      name="heroslider"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      template="heroslider.pt"
+      class=".viewlets.HeroSlider"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      name="bannerslider"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      template="bannerslider.pt"
+      class=".viewlets.BannerSlider"
+      permission="zope2.View"
+      />
+
+</configure>

@@ -1,6 +1,22 @@
+<?python
+from zope.component import getMultiAdapter
+context = econtext['context'].aq_inner
+portal_state = getMultiAdapter((context, econtext['request']), name=u'plone_portal_state')
+current_language = portal_state.language()
+?>
+
 <div class="row">
   <div class="col-xs-12">
+
+<tal:zh condition="python:current_language == 'zh-tw'">
 臺灣警察專科學校 版權所有© CopyRights 2006-<p tal:replace="view/year" />. 隱私權政策宣告 | 資訊安全政策宣告<br/>
 校址：11696臺北市文山區興隆路三段 153 號 電話：(02)22308512-4　傳真：(02)22303951
+</tal:zh>
+
+<tal:en condition="python:current_language == 'en-us'">
+© CopyRights 2015-<tal:year content="view/year"/>. All Rights Reserved to Taiwan Police College. <br/>
+No.153, Sec. 3, Singlong Rd. ,Wunshan District, Taipei City 11696, Taiwan，R.O.C. Tel：(02)22308512-4 / Fax：(02)22303951
+</tal:en>
+
   </div>
 </div>

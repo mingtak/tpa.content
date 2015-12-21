@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="tpa.content">
+<body>
+
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+
+<h3 tal:content="context/Title" />
+<table class="table">
+  <tr>
+    <th>標 題</th>
+  <tr>
+
+  <tbody>
+    <tal:repeat define="brain context/getChildNodes;
+                    catalog python:context.portal_catalog;
+                    brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
+                                  sort_on='modified', sort_order='reverse')"
+        tal:repeat="item brain">
+        <tr tal:condition="python:item.Type() != 'Image'">
+          <td style="width:70%">
+            <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
+          </td>
+        </tr>
+    </tal:repeat>
+  </tbody>
+</table>
+
+
+
+
+
+
+<!--
+<div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "autoPlay": true}'>
+
+<tal:check_anonymous condition="context/@@is_anonymous">
+  <tal:repeat repeat="item context/relatedItems">
+    <div>
+        <div class="thumbnail">
+            <img tal:replace="structure item/to_object/@@images/image" />
+        </div>
+    </div>
+  </tal:repeat>
+</tal:check_anonymous>
+
+</div>
+-->
+
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

@@ -1,30 +1,32 @@
 <?xml version="1.0"?>
-<object name="Task" meta_type="Dexterity FTI" i18n:domain="tpa.content"
+<object name="Cover" meta_type="Dexterity FTI" i18n:domain="tpa.content"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">Task</property>
+  <property name="title" i18n:translate="">Cover</property>
   <property name="description"
     i18n:translate=""></property>
   <property name="icon_expr"></property>
-  <property name="factory">Task</property>
-  <property name="add_view_expr">string:${folder_url}/++add++Task</property>
+  <property name="factory">Cover</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Cover</property>
   <property name="link_target"></property>
-  <property name="immediate_view">view</property>
+  <property name="immediate_view">cover_view</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
   </property>
   <property name="allow_discussion">False</property>
-  <property name="default_view">view</property>
+  <property name="default_view">cover_view</property>
   <property name="view_methods">
     <element value="view"/>
+    <element value="cover_view"/>
   </property>
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>
   <property name="klass">plone.dexterity.content.Item</property>
   <property name="behaviors">
     <element value="plone.app.content.interfaces.INameFromTitle"/>
+    <element value="plone.app.relationfield.behavior.IRelatedItems"/>
   </property>
-  <property name="schema">tpa.content.interfaces.ITask</property>
+  <property name="schema">tpa.content.interfaces.ICover</property>
   <property name="model_source"></property>
   <property name="model_file"></property>
   <alias from="(Default)" to="(dynamic view)"/>

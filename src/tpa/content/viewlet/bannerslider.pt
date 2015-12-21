@@ -1,0 +1,34 @@
+<tal:is_anonymous condition="context/@@is_anonymous">
+
+
+
+  <tal:is_cover condition="python:context.Type() != 'Cover'">
+    <div id="viewlet_banner_slider">
+
+<div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "autoPlay": true}'>
+
+
+    <div tal:condition="python:not getattr(context, 'banner1') and context.Type() == 'Folder'">
+        <div class="thumbnail">
+            <img src="http://tpa.mingtak.com.tw/system/999698014e3b899689ba7ba17406/8b665c082.jpg/@@images/image/large"/>
+        </div>
+    </div>
+
+
+  <tal:repeat repeat="item python:['1','2','3','4','5']">
+    <div tal:condition="python:getattr(context, 'banner%s' % item)">
+        <div class="thumbnail">
+            <img tal:attributes="src string:${context/absolute_url}/@@images/banner${item}"/>
+        </div>
+    </div>
+  </tal:repeat>
+
+</div>
+
+
+    </div>
+  </tal:is_cover>
+
+
+</tal:is_anonymous>
+

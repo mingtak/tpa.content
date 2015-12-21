@@ -17,4 +17,57 @@
       directory="static"
       />
 
+  <browser:page
+      name="tpa_folder_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.TpaFolderView"
+      template="template/tpa_folder_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="tpa_folder_listing_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.TpaFolderListingView"
+      template="template/tpa_folder_listing_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="cover_view"
+      for="tpa.content.interfaces.ICover"
+      class=".views.CoverView"
+      template="template/cover_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="ad_view"
+      for="tpa.content.interfaces.IAd"
+      class=".views.AdView"
+      template="template/ad_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="get_portal_id"
+      for="zope.interface.Interface"
+      class=".views.GetPortalId"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="searchresult"
+      for="zope.interface.Interface"
+      class=".views.SearchResult"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="is_anonymous"
+      for="zope.interface.Interface"
+      class=".views.Is_Anonymous"
+      permission="zope2.View"
+      />
+
 </configure>

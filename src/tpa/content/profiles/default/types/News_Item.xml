@@ -23,12 +23,12 @@
  <property name="model_source"></property>
  <property name="model_file">plone.app.contenttypes.schema:news_item.xml</property>
  <property name="behaviors" purge="false">
-  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
-  <element value="plone.app.contenttypes.behaviors.richtext.IRichText"/>
+<!--  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/> -->
   <element value="nnsh.behavior.classification.IClassification" />
+  <element value="plone.app.contenttypes.behaviors.richtext.IRichText"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
 <!--  <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/> -->
-  <element value="plone.app.dexterity.behaviors.id.IShortName"/>
+<!--  <element value="plone.app.dexterity.behaviors.id.IShortName"/> -->
 <!--  <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/> -->
 <!--  <element value="plone.app.relationfield.behavior.IRelatedItems"/> -->
 <!--  <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/> -->

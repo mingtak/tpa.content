@@ -1,0 +1,20 @@
+<section class="portlet portletAdvertising"
+    i18n:domain="tpa.content">
+
+
+    <header class="portletHeader">
+        <span class="portletTopLeft"></span>
+        相關連結
+        <span class="portletTopRight"></span>
+    </header>
+    <div class="ad-portlet" tal:repeat="item view/getAds"
+         style="text-align:center; margin-top: 5px">
+            <a tal:attributes="href item/url;
+                               title item/Title"  target="_blank">
+                <img tal:attributes="src string:${item/absolute_url}/@@images/image/mini;
+                                     alt item/Title" />
+            </a>
+
+    </div>
+
+</section>

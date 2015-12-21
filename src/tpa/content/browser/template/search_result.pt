@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="tpa.content">
+<body>
+
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+<tal:brain define="brain view/brain">
+  <ul class="simple-post-list">
+    <li tal:repeat="item brain">
+<div class="post-info">
+        <a tal:attributes="href item/getURL" tal:content="item/Title" />
+<div tal:content="python:'%s' % item.created.strftime('%Y / %m / %d')" />
+</div>
+    </li>
+  </ul>
+</tal:brain>
+
+
+
+
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+
