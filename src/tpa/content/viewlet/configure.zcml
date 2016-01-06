@@ -5,6 +5,24 @@
     i18n_domain="tpa.content">
 
     <browser:viewlet
+      for="plone.app.contenttypes.interfaces.INewsItem"
+      name="addthis_news"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      template="addthis.pt"
+      class=".viewlets.Addthis"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      for="plone.app.contenttypes.interfaces.IDocument"
+      name="addthis_document"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      template="addthis.pt"
+      class=".viewlets.Addthis"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
       name="heroslider"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
       template="heroslider.pt"
@@ -19,5 +37,14 @@
       class=".viewlets.BannerSlider"
       permission="zope2.View"
       />
+
+    <browser:viewlet
+      name="searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="searchbox.pt"
+      class=".viewlets.SearchBox"
+      permission="zope2.View"
+      />
+
 
 </configure>

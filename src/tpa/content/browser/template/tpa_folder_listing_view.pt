@@ -13,10 +13,10 @@
                     tal:define="toc context/table_of_contents|nothing;">
 
 
-<h3 tal:content="context/Title" />
 <table class="table">
   <tr>
     <th>標 題</th>
+    <th style="text-align:center">更 新 日 期</th>
   <tr>
 
   <tbody>
@@ -27,13 +27,17 @@
         tal:repeat="item brain">
         <tr tal:condition="python:item.Type() != 'Image'">
           <td style="width:70%">
-            <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
+            <a tal:condition="python:item.Type() in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
+               tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
+            <a target="_blank"
+               tal:condition="python:item.Type() not in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
+               tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
           </td>
+          <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
         </tr>
     </tal:repeat>
   </tbody>
 </table>
-
 
 
 

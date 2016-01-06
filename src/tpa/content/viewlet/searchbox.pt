@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="tpa.content">
+
+<tal:is_anonymous condition="context/@@is_anonymous">
+
+  <div class="search">
+    <form id="searchForm" action="/searchresult" method="post">
+      <div class="input-group">
+        <input i18n:attributes="placeholder"
+               type="text" class="form-control search" name="string" id="q" placeholder="search...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit"><i class="icon icon-search"></i></button>
+        </span>
+      </div>
+    </form>
+  </div>
+
+
+</tal:is_anonymous>
+
+</html>

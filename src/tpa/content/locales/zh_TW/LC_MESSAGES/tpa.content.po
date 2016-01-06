@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-12-12 12:14+0000\n"
+"POT-Creation-Date: 2016-01-06 02:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,19 +14,39 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ./profiles/default/types/Ad.xml
+msgid "Ad"
+msgstr "廣告連結"
+
+#: ./interfaces.py:19
+msgid "Advertising, show at sidebar in homepage."
+msgstr "廣告連結，會顯示在側邊欄位中"
+
 #: ./profiles/default/types/Cover.xml
 msgid "Cover"
 msgstr "首頁封面"
 
-#: ./interfaces.py:22
+#: ./interfaces.py:42
 msgid "Description"
 msgstr "描述"
+
+#: ./interfaces.py:29
+msgid "Image"
+msgstr "圖檔"
 
 #: ./behavior/behaviors.py:18
 msgid "Published Department"
 msgstr "發佈單位"
 
-#: ./interfaces.py:17
+#: ./interfaces.py:18
 msgid "Title"
 msgstr "標題"
+
+#: ./interfaces.py:24
+msgid "URL Address"
+msgstr "連結網址"
+
+#: ./viewlet/searchbox.pt:11
+msgid "search..."
+msgstr "全文搜尋..."
 

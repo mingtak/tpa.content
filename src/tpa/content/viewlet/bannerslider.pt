@@ -10,7 +10,7 @@
 
     <div tal:condition="python:not getattr(context, 'banner1') and context.Type() == 'Folder'">
         <div class="thumbnail">
-            <img src="http://tpa.mingtak.com.tw/system/999698014e3b899689ba7ba17406/8b665c082.jpg/@@images/image/large"/>
+            <img tal:attributes="src string:${context/absolute_url}/system/4e0d5206985e6a946848/image.jpeg/@@images/image/large"/>
         </div>
     </div>
 

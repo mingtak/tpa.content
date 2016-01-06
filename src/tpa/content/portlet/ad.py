@@ -43,6 +43,13 @@ class Renderer(base.Renderer):
         children = adFolder.getChildNodes()
         return children
 
+    def getExternalAds(self):
+        portal = api.portal.get()
+        adFolder = portal['system']['591690e890237d507ba17406']
+        children = adFolder.getChildNodes()
+        return children
+
+
 
 class AddForm(base.AddForm):
     schema = IAdvertising

@@ -12,6 +12,17 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
+<?python 
+from DateTime import DateTime
+from plone import api
+groups = api.group.get_groups()
+groupDict = {}
+for g in groups:
+    groupDict[g.getId()] = g.getProperties()['title']
+
+startDate = DateTime() - 90
+
+?>
 
 <h3>臺灣警察專科學校 最新消息
 </h3>
@@ -23,16 +34,23 @@
   <tr>
 
   <tbody>
-    <tr tal:define="catalog python:context.portal_catalog;
-                    brain python:catalog({'Type':'News Item', 'review_state':'published'},
+    <tal:tr define="catalog python:context.portal_catalog;
+                    newsFolder python:catalog({'Type':'Folder', 'id':'news'})[0].getObject();
+                    brain newsFolder/getChildNodes;
+                    brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                  sort_on='modified', sort_order='reverse')"
-        tal:repeat="item brain">
+            repeat="item brain">
+
+      <tr tal:condition="python:item.modified()>startDate">
         <td style="width:70%">
-          <a tal:content="item/Title" tal:attributes="href item/getURL">標題</a>
+          <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
         </td>
-        <td style="width:15%; text-align:center" tal:content="item/publisher">發佈單位</td>
-        <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified.strftime('%Y/%m/%d')">日期</td>
-    </tr>
+        <td style="width:15%; text-align:center"
+            tal:content="python:groupDict[item.publisher]">發佈單位</td>
+        <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
+      </tr>
+
+    </tal:tr>
   </tbody>
 </table>
 

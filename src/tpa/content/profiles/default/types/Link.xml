@@ -23,12 +23,13 @@
  <property name="model_source"></property>
  <property name="model_file">plone.app.contenttypes.schema:link.xml</property>
  <property name="behaviors" purge="false">
-  <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
+<!--  <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/> -->
   <element value="plone.app.dexterity.behaviors.id.IShortName"/>
-  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
+<!--  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/> -->
+  <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
   <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
-  <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
+<!--  <element value="plone.app.versioningbehavior.behaviors.IVersionable" /> -->
  </property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="@@edit"/>

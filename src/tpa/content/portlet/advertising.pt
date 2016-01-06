@@ -6,23 +6,57 @@
         <span class="portletTopLeft"></span>
         相關連結
         <span class="portletTopRight"></span>
-    </header>
-    <div class="ad-portlet toggle-content" tal:repeat="item view/getAds"
-         style="text-align:center; margin-top: 5px">
+
+        <div tal:condition="context/@@is_anonymous"
+             class="toggle-content"
+             style="text-align:center; margin-top: 5px">
+          <tal:repeat repeat="item view/getAds">
             <a tal:attributes="href item/url;
                                title item/Title"  target="_blank">
                 <img tal:attributes="src string:${item/absolute_url}/@@images/image/ad;
                                      alt item/Title" />
             </a>
+          </tal:repeat>
+        </div>
 
+    </header>
+    <div tal:condition="not:context/@@is_anonymous"
+         class="ad-portlet toggle-content"
+         style="text-align:center; margin-top: 5px">
+      <tal:repeat repeat="item view/getAds">
+            <a tal:attributes="href item/url;
+                               title item/Title"  target="_blank">
+                <img tal:attributes="src string:${item/absolute_url}/@@images/image/ad;
+                                     alt item/Title" />
+            </a>
+      </tal:repeat>
     </div>
+
+
 
     <header class="portletHeader">
         <span class="portletTopLeft"></span>
         外部連結
         <span class="portletTopRight"></span>
+        <div class="toggle-content"
+             tal:condition="context/@@is_anonymous"
+             style="text-align:center; margin-top: 5px">
+      <tal:repeat repeat="item view/getExternalAds">
+                <a tal:attributes="href item/url;
+                                   title item/Title"  target="_blank">
+                    <img tal:attributes="src string:${item/absolute_url}/@@images/image/thumb;
+                                         alt item/Title" />
+                </a>
+      </tal:repeat>
+        </div>
+
+
+
+
+
+
     </header>
-    <div class="ad-portlet" tal:repeat="item view/getExternalAds"
+    <div class="ad-portlet" tal:repeat="item view/getExternalAds" tal:condition="not:context/@@is_anonymous"
          style="text-align:center; margin-top: 5px">
             <a tal:attributes="href item/url;
                                title item/Title"  target="_blank">
