@@ -7,14 +7,30 @@
         相關連結
         <span class="portletTopRight"></span>
     </header>
-    <div class="ad-portlet" tal:repeat="item view/getAds"
+    <div class="ad-portlet toggle-content" tal:repeat="item view/getAds"
          style="text-align:center; margin-top: 5px">
             <a tal:attributes="href item/url;
                                title item/Title"  target="_blank">
-                <img tal:attributes="src string:${item/absolute_url}/@@images/image/mini;
+                <img tal:attributes="src string:${item/absolute_url}/@@images/image/ad;
                                      alt item/Title" />
             </a>
 
     </div>
+
+    <header class="portletHeader">
+        <span class="portletTopLeft"></span>
+        外部連結
+        <span class="portletTopRight"></span>
+    </header>
+    <div class="ad-portlet" tal:repeat="item view/getExternalAds"
+         style="text-align:center; margin-top: 5px">
+            <a tal:attributes="href item/url;
+                               title item/Title"  target="_blank">
+                <img tal:attributes="src string:${item/absolute_url}/@@images/image/thumb;
+                                     alt item/Title" />
+            </a>
+
+    </div>
+
 
 </section>
