@@ -41,7 +41,7 @@ startDate = DateTime() - 90
                                  sort_on='modified', sort_order='reverse')"
             repeat="item brain">
 
-      <tr tal:condition="python:item.modified()>startDate">
+      <tr tal:condition="python:item.modified()>startDate and item.Type() in ['News Item']">
         <td style="width:70%">
           <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
         </td>
