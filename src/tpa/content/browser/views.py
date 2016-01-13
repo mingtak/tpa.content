@@ -2,6 +2,8 @@ from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 #from zope.component import getMultiAdapter
 from plone import api
+from DateTime import DateTime
+from plone.memoize import ram
 
 #from Acquisition import aq_inner
 #from zope.component import getUtility
@@ -60,3 +62,11 @@ class Is_Anonymous(BrowserView):
 
     def __call__(self):
         return api.user.is_anonymous()
+
+
+class VisitorCounter(BrowserView):
+
+    @ram.cache(lambda *args: DateTime().hour())
+    def __call__(self):
+        now = int(DateTime().timeTime())
+        return int((now/80)) - 18100000

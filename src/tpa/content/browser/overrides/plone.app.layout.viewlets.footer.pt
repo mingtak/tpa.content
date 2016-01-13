@@ -5,7 +5,7 @@ portal_state = getMultiAdapter((context, econtext['request']), name=u'plone_port
 current_language = portal_state.language()
 ?>
 
-<div class="row">
+<div class="row" i18n:domain="tpa.content">
   <div class="col-xs-12">
 
 <tal:zh condition="python:current_language == 'zh-tw'">
@@ -18,5 +18,9 @@ current_language = portal_state.language()
 No.153, Sec. 3, Singlong Rd. ,Wunshan District, Taipei City 11696, Taiwan，R.O.C. Tel：(02)22308512-4 / Fax：(02)22303951
 </tal:en>
 
+<span style="float:right" tal:condition="context/@@is_anonymous">
+  <tal:counter i18n:translate="">訪客人數：</tal:counter>
+  <i tal:replace="context/@@visitorCounter">92154</i>
+</span>
   </div>
 </div>

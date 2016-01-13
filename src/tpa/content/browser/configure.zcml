@@ -70,4 +70,11 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      name="visitorCounter"
+      for="zope.interface.Interface"
+      class=".views.VisitorCounter"
+      permission="zope2.View"
+      />
+
 </configure>
