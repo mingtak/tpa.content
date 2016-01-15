@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-06 02:09+0000\n"
+"POT-Creation-Date: 2016-01-15 04:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,28 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tpa.content\n"
 
+#: ./browser/setupPassword.py:25
+msgid "Account Id"
+msgstr ""
+
 #: ./profiles/default/types/Ad.xml
 msgid "Ad"
 msgstr ""
 
 #: ./interfaces.py:19
 msgid "Advertising, show at sidebar in homepage."
+msgstr ""
+
+#: ./browser/setupPassword.py:56
+msgid "Already setup password!"
+msgstr ""
+
+#: ./browser/setupPassword.py:66
+msgid "Cancel"
+msgstr ""
+
+#: ./browser/setupPassword.py:72
+msgid "Cancel this action!"
 msgstr ""
 
 #: ./profiles/default/types/Cover.xml
@@ -37,8 +53,29 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
+#: ./browser/setupPassword.py:29
+msgid "New Password"
+msgstr ""
+
+#: ./browser/setupPassword.py:39
+msgid "Please input account id and password, setup it."
+msgstr ""
+
 #: ./behavior/behaviors.py:18
 msgid "Published Department"
+msgstr ""
+
+#: ./browser/setupPassword.py:42
+msgid "Setup"
+msgstr ""
+
+#: ./browser/setupPassword.py:38
+#: ./profiles/default/actions.xml
+msgid "Setup Password"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Setup password"
 msgstr ""
 
 #: ./interfaces.py:18
@@ -49,7 +86,15 @@ msgstr ""
 msgid "URL Address"
 msgstr ""
 
+#: ./browser/setupPassword.py:59
+msgid "User not found!"
+msgstr ""
+
 #: ./viewlet/searchbox.pt:11
 msgid "search..."
+msgstr ""
+
+#: ./browser/overrides/plone.app.layout.viewlets.footer.pt:22
+msgid "visitor:"
 msgstr ""
 

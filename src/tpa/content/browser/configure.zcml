@@ -77,4 +77,11 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="setupPassword"
+      permission="cmf.ManagePortal"
+      class=".setupPassword.SetupPassword"
+      />
+
 </configure>
