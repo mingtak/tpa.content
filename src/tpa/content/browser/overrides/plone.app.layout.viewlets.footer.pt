@@ -19,7 +19,7 @@ No.153, Sec. 3, Singlong Rd. ,Wunshan District, Taipei City 11696, Taiwan，R.O.
 </tal:en>
 
 <span style="float:right" tal:condition="context/@@is_anonymous">
-  <tal:counter i18n:translate="">訪客人數：</tal:counter>
+  <tal:counter i18n:translate="">visitor:</tal:counter>
   <i tal:replace="context/@@visitorCounter">92154</i>
 </span>
   </div>
