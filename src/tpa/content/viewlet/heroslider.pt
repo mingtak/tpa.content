@@ -15,13 +15,14 @@
       <li data-transition="fade" data-slotamount="13" data-masterspeed="300" >
         <img tal:define="item python:context.relatedItems[0].to_object"
              tal:attributes="src string:${item/absolute_url}/@@images/image"
-             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
+             alt="首頁形像主視覺">
         <div class="tp-caption sft stb visible-lg"
              data-x="72"
              data-y="130"
              data-speed="300"
              data-start="1000"
-             data-easing="easeOutExpo"><img src="/++theme++barceloneta/img/slides/slide-title-border.png" alt="">
+             data-easing="easeOutExpo"><img src="/++theme++barceloneta/img/slides/slide-title-border.png" alt="首頁形像主視覺">
         </div>
         <div class="tp-caption top-label lfl stl"
              data-x="152"
@@ -36,7 +37,7 @@
              data-speed="300"
              data-start="1000"
              data-easing="easeOutExpo">
-           <img src="/++theme++barceloneta/img/slides/slide-title-border.png" alt="">
+           <img src="/++theme++barceloneta/img/slides/slide-title-border.png" alt="首頁形像主視覺">
         </div>
         <div class="tp-caption main-label sft stb"
              data-x="70"
@@ -44,21 +45,22 @@
              data-speed="300"
              data-start="1500"
              data-easing="easeOutExpo">
-           <img src="/system/images/68218a13_8aa0.png/@@images/image/preview" alt="">
+           <img src="/system/images/68218a13_8aa0.png/@@images/image/preview" alt="首頁形像主視覺">
         </div>
       </li>
 
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
         <img tal:define="item python:context.relatedItems[1].to_object"
              tal:attributes="src string:${item/absolute_url}/@@images/image"
-             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
+             alt="首頁形像主視覺">
 <!--        <div class="tp-caption fade"
              data-x="50"
              data-y="100"
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
-          <img src="/++theme++barceloneta/img/slides/slide-concept.png" alt="">
+          <img src="/++theme++barceloneta/img/slides/slide-concept.png" alt="首頁形像主視覺">
         </div>
         <div class="tp-caption blackboard-text fade "
              data-x="180"
@@ -77,7 +79,8 @@
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
         <img tal:define="item python:context.relatedItems[2].to_object"
              tal:attributes="src string:${item/absolute_url}/@@images/image"
-             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
+             alt="首頁形像主視覺">
       </li>
 
 

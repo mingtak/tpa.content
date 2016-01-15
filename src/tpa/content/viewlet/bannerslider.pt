@@ -10,7 +10,8 @@
 
     <div tal:condition="python:not getattr(context, 'banner1') and context.Type() == 'Folder'">
         <div class="thumbnail">
-            <img tal:attributes="src string:${context/absolute_url}/system/4e0d5206985e6a946848/image.jpeg/@@images/image/large"/>
+            <img tal:attributes="src string:${context/absolute_url}/system/4e0d5206985e6a946848/image.jpeg/@@images/image/large;
+                                 alt context/Title"/>
         </div>
     </div>
 
@@ -18,7 +19,8 @@
   <tal:repeat repeat="item python:['1','2','3','4','5']">
     <div tal:condition="python:getattr(context, 'banner%s' % item)">
         <div class="thumbnail">
-            <img tal:attributes="src string:${context/absolute_url}/@@images/banner${item}"/>
+            <img tal:attributes="src string:${context/absolute_url}/@@images/banner${item};
+                                 alt context/Title"/>
         </div>
     </div>
   </tal:repeat>
