@@ -16,7 +16,8 @@
 <h3 tal:content="context/Title" />
 
 <a tal:attributes="href context/url">
-  <img tal:attributes="src string:${context/absolute_url}/@@images/image/mini" />
+  <img tal:attributes="src string:${context/absolute_url}/@@images/image/mini;
+                       alt context/Title"/>
 </a>
 
 </metal:content-core>
