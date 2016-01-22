@@ -45,11 +45,11 @@
                                      sort_on='modified', sort_order='reverse')"
         tal:repeat="item python:range(len(brain))">
 <tr tal:condition="repeat/item/even">
-  <td style="border:0">
+  <td style="border:0" tal:condition="python:modules['plone'].api.content.get_state(brain[item]) == 'published'">
     <h4><i class="icon icon-folder-open"></i>
     <a tal:content="python:brain[item].Title()" tal:attributes="href python:brain[item].absolute_url()">odd</a></h4>
   </td>
-  <td style="border:0" tal:condition="not:repeat/item/end">
+  <td style="border:0" tal:condition="python:not repeat['item'].end and modules['plone'].api.content.get_state(brain[item+1]) == 'published'">
     <h4><i class="icon icon-folder-open"></i>
     <a tal:content="python:brain[item+1].Title()"  tal:attributes="href python:brain[item+1].absolute_url()">even</a></h4>
   </td>
