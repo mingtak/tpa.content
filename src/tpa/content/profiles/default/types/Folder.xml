@@ -17,6 +17,7 @@
  <property name="view_methods">
   <element value="tpa_folder_view"/>
   <element value="tpa_folder_listing_view"/>
+  <element value="tpa_folder_news_listing_view"/>
   <element value="listing_view"/>
   <element value="summary_view"/>
   <element value="tabular_view"/>

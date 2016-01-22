@@ -48,6 +48,11 @@ class TpaFolderListingView(BrowserView):
     """
 
 
+class TpaFolderNewsListingView(BrowserView):
+    """ Tpa Folder News Listing View
+    """
+
+
 class CoverView(BrowserView):
     """ Cover View (default)
     """
