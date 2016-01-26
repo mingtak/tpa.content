@@ -14,26 +14,6 @@
 
 
 <tal:commit condition="python:False">
-<!--
-<ul class="simple-post-list">
-    <tal:brain define="brain context/getChildNodes;
-                       catalog python:context.portal_catalog;
-                       brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
-                                     sort_on='modified', sort_order='reverse')"
-        tal:repeat="item brain">
-        <li style="width:70%" tal:condition="python:item.Type() != 'Image'">
-<h4>
-<i class="icon icon-folder-open" />
-          <a tal:condition="python:item.Type() in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
-             tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-          <a target="_blank"
-             tal:condition="python:item.Type() not in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
-             tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-</h4>
-        </li>
-    </tal:brain>
-</ul>
--->
 </tal:commit>
 
 <?python
@@ -45,14 +25,9 @@ for i in range(len(brain3)):
         results.append(brain3[i])
 ?>
 
-
 <hr/>
 <table style="border:0">
-    <tal:brain define="brain context/getChildNodes;
-                       catalog python:context.portal_catalog;
-                       brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
-                                     sort_on='modified', sort_order='reverse')"
-        tal:repeat="item python:range(len(results))">
+    <tal:brain repeat="item python:range(len(results))">
 <tr tal:condition="python:repeat['item'].even">
   <td style="border:0">
     <h4><i class="icon icon-folder-open"></i>
