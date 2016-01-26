@@ -25,6 +25,7 @@
  <property name="behaviors" purge="true">
 <!--  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/> -->
   <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+  <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
   <element value="nnsh.behavior.classification.IClassification" />
   <element value="plone.app.contenttypes.behaviors.richtext.IRichText"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
