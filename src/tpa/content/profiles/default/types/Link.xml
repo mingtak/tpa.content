@@ -22,7 +22,7 @@
  <property name="schema"></property>
  <property name="model_source"></property>
  <property name="model_file">plone.app.contenttypes.schema:link.xml</property>
- <property name="behaviors" purge="false">
+ <property name="behaviors" purge="true">
 <!--  <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/> -->
   <element value="plone.app.dexterity.behaviors.id.IShortName"/>
 <!--  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/> -->

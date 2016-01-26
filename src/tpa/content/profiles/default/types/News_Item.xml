@@ -22,7 +22,7 @@
  <property name="schema"></property>
  <property name="model_source"></property>
  <property name="model_file">plone.app.contenttypes.schema:news_item.xml</property>
- <property name="behaviors" purge="false">
+ <property name="behaviors" purge="true">
 <!--  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/> -->
   <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
   <element value="nnsh.behavior.classification.IClassification" />
