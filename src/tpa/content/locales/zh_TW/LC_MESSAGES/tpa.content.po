@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-15 04:47+0000\n"
+"POT-Creation-Date: 2016-01-22 05:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,10 @@ msgstr "描述"
 msgid "Image"
 msgstr "圖檔"
 
+#: ./configure.zcml:26
+msgid "Installs the tpa.content add-on."
+msgstr "安裝警專專用擴充模組"
+
 #: ./browser/setupPassword.py:29
 msgid "New Password"
 msgstr "新密碼："
@@ -83,6 +87,10 @@ msgstr "標題"
 msgid "URL Address"
 msgstr "連結網址"
 
+#: ./configure.zcml:41
+msgid "Uninstalls the tpa.content add-on."
+msgstr "御載警專專用擴充模組"
+
 #: ./browser/setupPassword.py:59
 msgid "User not found!"
 msgstr "沒有這個帳號！"
@@ -91,7 +99,10 @@ msgstr "沒有這個帳號！"
 msgid "search..."
 msgstr "全文搜尋..."
 
+#: ./configure.zcml:26
+msgid "tpa.content"
+msgstr ""
+
 #: ./browser/overrides/plone.app.layout.viewlets.footer.pt:22
 msgid "visitor:"
 msgstr "訪客人數："
-
