@@ -14,44 +14,28 @@
 
 
 <tal:commit condition="python:False">
-<!--
-<ul class="simple-post-list">
-    <tal:brain define="brain context/getChildNodes;
-                       catalog python:context.portal_catalog;
-                       brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
-                                     sort_on='modified', sort_order='reverse')"
-        tal:repeat="item brain">
-        <li style="width:70%" tal:condition="python:item.Type() != 'Image'">
-<h4>
-<i class="icon icon-folder-open" />
-          <a tal:condition="python:item.Type() in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
-             tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-          <a target="_blank"
-             tal:condition="python:item.Type() not in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
-             tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-</h4>
-        </li>
-    </tal:brain>
-</ul>
--->
 </tal:commit>
 
+<?python
+from plone import api
+brain3 = econtext['context'].getChildNodes()
+results = []
+for i in range(len(brain3)):
+    if brain3[i].Type() in ['Page', 'Document', 'Event', 'News Item', 'Folder'] and api.content.get_state(brain3[i]) == 'published':
+        results.append(brain3[i])
+?>
 
 <hr/>
 <table style="border:0">
-    <tal:brain define="brain context/getChildNodes;
-                       catalog python:context.portal_catalog;
-                       brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
-                                     sort_on='modified', sort_order='reverse')"
-        tal:repeat="item python:range(len(brain))">
-<tr tal:condition="repeat/item/even">
+    <tal:brain repeat="item python:range(len(results))">
+<tr tal:condition="python:repeat['item'].even">
   <td style="border:0">
     <h4><i class="icon icon-folder-open"></i>
-    <a tal:content="python:brain[item].Title()" tal:attributes="href python:brain[item].absolute_url()">odd</a></h4>
+    <a tal:content="python:results[item].Title()" tal:attributes="href python:results[item].absolute_url()">odd</a></h4>
   </td>
   <td style="border:0" tal:condition="not:repeat/item/end">
     <h4><i class="icon icon-folder-open"></i>
-    <a tal:content="python:brain[item+1].Title()"  tal:attributes="href python:brain[item+1].absolute_url()">even</a></h4>
+    <a tal:content="python:results[item+1].Title()"  tal:attributes="href python:results[item+1].absolute_url()">even</a></h4>
   </td>
 </tr>
    </tal:brain>

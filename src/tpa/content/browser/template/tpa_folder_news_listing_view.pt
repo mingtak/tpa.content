@@ -25,7 +25,7 @@
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
-        <tr tal:condition="python:item.Type() == 'News Item'">
+        <tr tal:condition="python:item.Type() == 'News Item' and modules['DateTime'].DateTime() > item.effective()">
           <td style="width:70%">
             <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
           </td>
