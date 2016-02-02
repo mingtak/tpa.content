@@ -12,6 +12,9 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
+<?python
+from plone import api
+?>
 
 <table class="table">
   <tr>
@@ -25,7 +28,9 @@
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
-        <tr tal:condition="python:item.Type() == 'News Item' and modules['DateTime'].DateTime() > item.effective()">
+        <tr tal:condition="python:item.Type() == 'News Item' and \
+                                                  modules['DateTime'].DateTime() > item.effective() and \
+                                                  api.content.get_state(obj=item) == 'published'">
           <td style="width:70%">
             <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
           </td>
