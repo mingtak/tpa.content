@@ -29,8 +29,9 @@ from plone import api
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
         <tr tal:condition="python:item.Type() == 'News Item' and \
-                                                  modules['DateTime'].DateTime() > item.effective() and \
-                                                  api.content.get_state(obj=item) == 'published'">
+                                  modules['DateTime'].DateTime() > item.effective() and \
+                                  (item.expires is None or modules['DateTime'].DateTime() < item.expires()) and \
+                                  api.content.get_state(obj=item) == 'published'">
           <td style="width:70%">
             <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
           </td>

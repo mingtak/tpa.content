@@ -41,7 +41,11 @@ startDate = DateTime() - 90
                                  sort_on='modified', sort_order='reverse')"
             repeat="item brain">
 
-      <tr tal:condition="python:item.modified()>startDate and item.Type() in ['News Item'] and api.content.get_state(obj=item) == 'published'">
+      <tr tal:condition="python:item.modified() > startDate and \
+                                item.Type() in ['News Item'] and \
+                                modules['DateTime'].DateTime() > item.effective() and \
+                                (item.expires is None or modules['DateTime'].DateTime() < item.expires()) and \
+                                api.content.get_state(obj=item) == 'published'">
         <td style="width:70%">
           <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
         </td>
