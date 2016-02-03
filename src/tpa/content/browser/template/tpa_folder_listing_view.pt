@@ -32,6 +32,9 @@
             <a target="_blank"
                tal:condition="python:item.Type() not in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
                tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
+            <a tal:condition="python:item.Type() == 'File'"
+               tal:attributes="href string:${item/absolute_url}/@@download/file/${item/file/filename}"
+               i18n:translate=""> (Download) </a>
           </td>
           <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
         </tr>
