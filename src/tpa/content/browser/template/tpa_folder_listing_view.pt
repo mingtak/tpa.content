@@ -17,6 +17,7 @@
   <tr>
     <th>標 題</th>
     <th style="text-align:center">更 新 日 期</th>
+    <th style="text-align:center">發 佈 日 期</th>
   <tr>
 
   <tbody>
@@ -37,6 +38,7 @@
                i18n:translate=""> (Download) </a>
           </td>
           <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
+          <td style="width:15%; text-align:center" tal:content="python:'%s' % item.created().strftime('%Y/%m/%d')">日期</td>
         </tr>
     </tal:repeat>
   </tbody>
