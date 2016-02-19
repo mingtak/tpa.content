@@ -25,7 +25,7 @@
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
-        <tr tal:condition="python:item.Type() != 'Image'">
+        <tr tal:condition="python:item.Type() != 'Image' and (item.Type() == 'File' or modules['plone'].api.content.get_state(obj=item) == 'published')">
           <td style="width:70%">
             <a tal:condition="python:item.Type() in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
                tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
