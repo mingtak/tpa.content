@@ -21,6 +21,12 @@ No.153, Sec. 3, Singlong Rd. ,Wunshan District, Taipei City 11696, Taiwan，R.O.
 <span style="float:right" tal:condition="context/@@is_anonymous">
   <tal:counter i18n:translate="">visitor:</tal:counter>
   <i tal:replace="context/@@visitorCounter">92154</i>
+
+<a href="http://www.handicap-free.nat.gov.tw/Applications/Detail?category=20060503105254" title="無障礙網站">
+    <img src="http://www.tpa.edu.tw/system/images/aa7b497d1a6a197ae0.jpg" border="0" width="88" height="31" alt="通過AA優先等級無障礙網頁檢測" />
+    </a>
 </span>
+
+
   </div>
 </div>
