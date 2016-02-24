@@ -8,8 +8,8 @@
         <label>網路資源</label>
         <div class="toggle-content nav nav-list primary push-bottom" style="">
           <li><a href="mailto:presd@cc.tpa.edu.tw" data-val="presd@cc.tpa.edu.tw" data-linktype="email">校長信箱</a></li>
-          <li><a data-val="/" href="http://tpa.mingtak.com.tw/../../system/516c52d94fe17bb1/" data-linktype="external">公務信箱</a></li>
-          <li><a data-val="/" href="http://tpa.mingtak.com.tw/../../system/7db28def8cc78a0a" data-linktype="external">網路資訊</a></li>
+          <li><a data-val="/" href="/system/516c52d94fe17bb1/" data-linktype="external">公務信箱</a></li>
+          <li><a data-val="/" href="/system/7db28def8cc78a0a" data-linktype="external">網路資訊</a></li>
         </div>
       </section>
     </header>
