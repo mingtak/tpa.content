@@ -47,6 +47,30 @@
              data-easing="easeOutExpo">
            <img src="/system/images/68218a13_8aa0.png/@@images/image/preview" alt="首頁形像主視覺">
         </div>
+
+<a href="/admission">
+        <div class="tp-caption fade"
+             data-x="770"
+             data-y="50"
+             data-speed="1500"
+             data-start="500"
+             data-easing="easeOutExpo">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
+        </div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="820"
+             data-y="100"
+             data-speed="1500"
+             data-start="1000"
+             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="850"
+             data-y="150"
+             data-speed="1500"
+             data-start="1500"
+             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+</a>
+
       </li>
 
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
@@ -54,26 +78,30 @@
              tal:attributes="src string:${item/absolute_url}/@@images/image"
              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
              alt="首頁形像主視覺">
-<!--        <div class="tp-caption fade"
-             data-x="50"
-             data-y="100"
+
+<a href="/admission">
+        <div class="tp-caption fade"
+             data-x="590"
+             data-y="40"
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
-          <img src="/++theme++barceloneta/img/slides/slide-concept.png" alt="首頁形像主視覺">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
-        <div class="tp-caption blackboard-text fade "
-             data-x="180"
-             data-y="180"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="650"
+             data-y="90"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">招生資訊</div>
-        <div class="tp-caption blackboard-text fade "
-             data-x="180"
-             data-y="220"
+             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="660"
+             data-y="140"
              data-speed="1500"
-             data-start="1200"
-             data-easing="easeOutExpo" style="font-size: 40px;">customize!</div> -->
+             data-start="1500"
+             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+</a>
+
       </li>
 
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
@@ -81,6 +109,36 @@
              tal:attributes="src string:${item/absolute_url}/@@images/image"
              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
              alt="首頁形像主視覺">
+
+<a href="/admission">
+        <div class="tp-caption fade"
+             data-x="830"
+             data-y="20"
+             data-speed="1500"
+             data-start="500"
+             data-easing="easeOutExpo">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
+        </div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="890"
+             data-y="70"
+             data-speed="1500"
+             data-start="1000"
+             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-x="900"
+             data-y="120"
+             data-speed="1500"
+             data-start="1500"
+             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+</a>
+
+
+
+
+
+
+
       </li>
 
 
