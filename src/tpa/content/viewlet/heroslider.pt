@@ -48,6 +48,7 @@
            <img src="/system/images/68218a13_8aa0.png/@@images/image/preview" alt="首頁形像主視覺">
         </div>
 
+<!-- 第一張 Cloud -->
 <a href="/admission">
         <div class="tp-caption fade"
              data-x="770"
@@ -79,24 +80,25 @@
              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
              alt="首頁形像主視覺">
 
+<!-- 第二張 Cloud -->
 <a href="/admission">
         <div class="tp-caption fade"
-             data-x="590"
-             data-y="40"
+             data-x="10"
+             data-y="20"
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
           <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
         <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
-             data-x="650"
-             data-y="90"
+             data-x="70"
+             data-y="70"
              data-speed="1500"
              data-start="1000"
              data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
         <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
-             data-x="660"
-             data-y="140"
+             data-x="80"
+             data-y="120"
              data-speed="1500"
              data-start="1500"
              data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
@@ -110,9 +112,10 @@
              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
              alt="首頁形像主視覺">
 
+<!-- 第三張 Cloud -->
 <a href="/admission">
         <div class="tp-caption fade"
-             data-x="830"
+             data-x="50"
              data-y="20"
              data-speed="1500"
              data-start="500"
@@ -120,13 +123,13 @@
           <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
         <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
-             data-x="890"
+             data-x="110"
              data-y="70"
              data-speed="1500"
              data-start="1000"
              data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
         <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
-             data-x="900"
+             data-x="120"
              data-y="120"
              data-speed="1500"
              data-start="1500"
