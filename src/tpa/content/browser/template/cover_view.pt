@@ -23,8 +23,8 @@ for g in groups:
 startDate = DateTime() - 90
 
 ?>
-
-<h3>臺灣警察專科學校 最新消息
+<h3 tal:condition="python:'notes' not in context.portal_url()">
+  臺灣警察專科學校 最新消息
 </h3>
 <table class="table">
   <tr>
