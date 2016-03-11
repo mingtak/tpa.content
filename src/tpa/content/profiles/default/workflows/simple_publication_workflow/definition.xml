@@ -107,6 +107,7 @@
    <guard-permission>Review portal content</guard-permission>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
+   <guard-role>Reviewer</guard-role>
   </guard>
   
  </transition>
@@ -117,6 +118,7 @@
    <guard-permission>Review portal content</guard-permission>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
+   <guard-role>Reviewer</guard-role>
   </guard>
   
  </transition>
@@ -127,6 +129,7 @@
    <guard-permission>Request review</guard-permission>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
+   <guard-role>Reviewer</guard-role>
   </guard>
   
  </transition>
