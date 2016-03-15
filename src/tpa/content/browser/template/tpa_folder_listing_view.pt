@@ -26,7 +26,10 @@
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
-        <tr tal:condition="python:item.Type() != 'Image' and (item.Type() == 'File' or modules['plone'].api.content.get_state(obj=item) == 'published')">
+        <tr tal:condition="python:item.Type() != 'Image' and \
+                                  (item.Type() == 'File' or modules['plone'].api.content.get_state(obj=item) == 'published') and \
+                                  (hasattr(item, 'effective') and modules['DateTime'].DateTime() > item.effective()) and \
+                                  (item.expires() is None or modules['DateTime'].DateTime() < item.expires())">
           <td style="width:70%">
             <a tal:condition="python:item.Type() in ['Folder', 'Document', 'News Item', 'Event', 'Image']"
                tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>

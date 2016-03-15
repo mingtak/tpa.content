@@ -18,12 +18,17 @@
 
 <?python
 from plone import api
+from DateTime import DateTime
 brain3 = econtext['context'].getChildNodes()
 results = []
 for i in range(len(brain3)):
-    if brain3[i].Type() in ['Page', 'Document', 'Event', 'News Item', 'Folder'] and api.content.get_state(brain3[i]) == 'published':
+    if brain3[i].Type() in ['Page', 'Document', 'Event', 'News Item', 'Folder'] and \
+       api.content.get_state(brain3[i]) == 'published' and \
+       (hasattr(brain3[i], 'effective') and DateTime() > brain3[i].effective()) and \
+       (brain3[i].expires() is None or DateTime() < brain3[i].expires()):
         results.append(brain3[i])
 ?>
+
 
 <hr/>
 <table style="border:0">
