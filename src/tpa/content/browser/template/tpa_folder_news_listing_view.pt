@@ -14,6 +14,8 @@
 
 <?python
 from plone import api
+from DateTime import DateTime
+refDate = DateTime() - 90
 ?>
 
 <table class="table">
@@ -29,6 +31,7 @@ from plone import api
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
         <tr tal:condition="python:item.Type() == 'News Item' and \
+                                  item.modified() > refDate and \
                                   modules['DateTime'].DateTime() > item.effective() and \
                                   (item.expires is None or modules['DateTime'].DateTime() < item.expires()) and \
                                   api.content.get_state(obj=item) == 'published'">
