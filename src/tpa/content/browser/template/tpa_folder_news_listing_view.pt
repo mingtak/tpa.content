@@ -23,7 +23,7 @@ from plone import api
   <tr>
 
   <tbody>
-    <tal:repeat define="brain context/getChildNodes;
+    <tal:x define="brain context/getChildNodes;
                     catalog python:context.portal_catalog;
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
@@ -37,7 +37,7 @@ from plone import api
           </td>
           <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
         </tr>
-    </tal:repeat>
+    </tal:x>
   </tbody>
 </table>
 
