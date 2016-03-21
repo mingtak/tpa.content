@@ -27,6 +27,14 @@
       />
 
   <browser:page
+      name="tpa_folder_history_news_listing_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.TpaFolderHistoryNewsListingView"
+      template="template/tpa_folder_history_news_listing_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="tpa_folder_view"
       for="plone.app.contenttypes.interfaces.IFolder"
       class=".views.TpaFolderView"
