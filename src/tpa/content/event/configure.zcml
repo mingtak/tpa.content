@@ -10,5 +10,9 @@
     handler=".event.moveContentToTop"
     />
 
+<subscriber
+    for="plone.app.contenttypes.interfaces.IDocument zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".event.moveContentToTop"
+    />
 
 </configure>

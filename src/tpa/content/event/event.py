@@ -6,5 +6,5 @@
 def moveContentToTop(item, event):
     """ Moves Item to the top of its folder """
     folder = item.getParentNode()
-    if hasattr(folder, 'moveObjectsToTop'):
+    if hasattr(folder, 'moveObjectsToTop') and folder.id == 'news':
         folder.moveObjectsToTop(item.id)
