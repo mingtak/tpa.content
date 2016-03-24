@@ -1,9 +1,13 @@
 <section class="portlet portletAdvertising"
-    i18n:domain="tpa.content">
+         i18n:domain="tpa.content">
 
 
+<?python
+from plone import api
+portal = api.portal.get()
+?>
 
-    <header class="portletHeader" tal:condition="context/@@is_anonymous">
+    <header class="portletHeader for_web" tal:condition="python:api.user.is_anonymous() and 'notes' not in portal.absolute_url()">
       <section class="toggle active">
         <label>網路資源</label>
         <div class="toggle-content nav nav-list primary push-bottom" style="">
@@ -49,7 +53,7 @@
 
 
 
-<tal:ad tal:condition="context/@@is_anonymous">
+<tal:ad tal:condition="python:api.user.is_anonymous() and 'notes' not in portal.absolute_url()">
     <header class="portletHeader">
       <section class="toggle">
         <label>外部連結</label>
