@@ -15,6 +15,7 @@
 <?python 
 from DateTime import DateTime
 from plone import api
+portal = api.portal.get()
 groups = api.group.get_groups()
 groupDict = {}
 for g in groups:
@@ -35,7 +36,7 @@ startDate = DateTime() - 90
 
   <tbody>
     <tal:tr define="catalog python:context.portal_catalog;
-                    newsFolder python:catalog({'Type':'Folder', 'id':'news'})[0].getObject();
+                    newsFolder python:portal['news'];
                     brain newsFolder/getChildNodes;
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                  sort_on='modified', sort_order='reverse')"
