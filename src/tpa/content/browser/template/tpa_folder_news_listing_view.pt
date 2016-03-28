@@ -15,12 +15,20 @@
 <?python
 from plone import api
 from DateTime import DateTime
+
+portal = api.portal.get()
+groups = api.group.get_groups()
+groupDict = {}
+for g in groups:
+    groupDict[g.getId()] = g.getProperties()['title']
+
 refDate = DateTime() - 90
 ?>
 
 <table class="table">
   <tr>
     <th>標 題</th>
+    <th style="text-align:center">發 佈 單 位</th>
     <th style="text-align:center">更 新 日 期</th>
   <tr>
 
@@ -38,6 +46,8 @@ refDate = DateTime() - 90
           <td style="width:70%">
             <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
           </td>
+          <td style="width:15%; text-align:center"
+            tal:content="python:groupDict[item.publisher]">發佈單位</td>
           <td style="width:15%; text-align:center" tal:content="python:'%s' % item.modified().strftime('%Y/%m/%d')">日期</td>
         </tr>
     </tal:x>
