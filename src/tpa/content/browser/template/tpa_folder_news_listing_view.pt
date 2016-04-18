@@ -54,7 +54,7 @@ refDate = DateTime() - 90
   </tbody>
 </table>
 
-
+<a class="pull-right btn btn-warning" href="/news/@@tpa_folder_history_news_listing_view">歷史訊息</a>
 
 
 
