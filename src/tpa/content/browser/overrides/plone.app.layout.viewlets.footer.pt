@@ -11,7 +11,8 @@ current_language = portal_state.language()
 <tal:zh condition="python:current_language == 'zh-tw'">
 臺灣警察專科學校 版權所有© CopyRights 2006-<p tal:replace="view/year" />.
 <a href="https://www.tpa.edu.tw/system/privacy">隱私權政策宣告</a> | <a href="https://www.tpa.edu.tw/system/security">資訊安全政策宣告</a><br/>
-校址：11696臺北市文山區興隆路三段 153 號 電話：(02)22308512-4　傳真：(02)22303951
+校址：11696臺北市文山區興隆路三段 153 號 電話：(02)22308512-4　傳真：(02)22303951<br/>
+最佳瀏覽環境：Internet Explorer 9.0 以上 或 Google Chrome 46.0 以上版本
 </tal:zh>
 
 <tal:en condition="python:current_language == 'en-us'">
