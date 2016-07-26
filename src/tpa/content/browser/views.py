@@ -31,6 +31,7 @@ class SearchResult(BrowserView):
         string = getattr(request, 'string', False)
 #        import pdb; pdb.set_trace()
         if not string:
+#        if True:
             request.response.redirect('/')
             return
         self.brain = catalog({'SearchableText':string.split()})
