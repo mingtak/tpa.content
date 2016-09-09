@@ -64,7 +64,8 @@ portal = api.portal.get()
       <tal:repeat repeat="item view/getExternalAds">
                 <a tal:attributes="href item/url;
                                    title item/Title"  target="_blank">
-                    <img tal:attributes="src string:${item/absolute_url}/@@images/image/thumb;
+                    <img style="width:120px; height:50px; padding:2px"
+                         tal:attributes="src string:${item/absolute_url}/@@images/image/thumb;
                                          alt item/Title" />
                 </a>
       </tal:repeat>
