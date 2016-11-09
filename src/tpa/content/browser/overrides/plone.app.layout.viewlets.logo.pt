@@ -13,6 +13,10 @@
 
                                        <nav>
                                                 <ul class="nav nav-pills nav-top">
+
+    <a href="https://www.facebook.com/TaiwanPoliceCollege/" style="float:left" target="_blank">
+        <img src="/++resource++tpa.content/fblink.png" style="width:100px; padding-top:5px; margin-right:80px"/>
+    </a>
                                                         <li>
                                                                 <a href="/"><i class="icon icon-angle-right"></i>回首頁</a>
                                                         </li>
