@@ -56,20 +56,26 @@
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
-          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺" style="width:120%">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 30px; line-height:32px"
              data-x="820"
              data-y="100"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
+             data-easing="easeOutExpo">
+             &nbsp;網路招生<br>&nbsp;&nbsp;&nbsp;&nbsp;報名系統<br>
+             <span style="font-size:24px; color:red">&nbsp;&nbsp;報名日期:3月20至3月29</span>
+        </div>
+</a>
+<a href="/admission">
+        <div class="tp-caption blackboard-text fade " style="color:blue; font-size: 28px;"
              data-x="850"
              data-y="150"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
+             data-easing="easeOutExpo"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
+        </div>
 </a>
 
       </li>
@@ -88,20 +94,26 @@
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
-          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺" style="width:120%">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 30px; line-height:32px"
              data-x="70"
              data-y="70"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
+             data-easing="easeOutExpo">
+             &nbsp;網路招生<br>&nbsp;&nbsp;&nbsp;&nbsp;報名系統<br>
+             <span style="font-size:24px; color:red">&nbsp;&nbsp;報名日期:3月20至3月29</span>
+        </div>
+</a>
+<a href="/admission">
+        <div class="tp-caption blackboard-text fade " style="color:blue; font-size: 28px;"
              data-x="80"
              data-y="120"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
+             data-easing="easeOutExpo" style="font-size: 40px;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
+        </div>
 </a>
 
       </li>
@@ -120,20 +132,26 @@
              data-speed="1500"
              data-start="500"
              data-easing="easeOutExpo">
-          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
+          <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺" style="width:120%">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
+        <div class="tp-caption blackboard-text fade" style="color:#D3DE28; font-size: 30px; line-height:32px"
              data-x="110"
              data-y="70"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
+             data-easing="easeOutExpo">
+             &nbsp;網路招生<br>&nbsp;&nbsp;&nbsp;&nbsp;報名系統<br>
+             <span style="font-size:24px; color:red">&nbsp;&nbsp;報名日期:3月20至3月29</span>
+        </div>
+</a>
+<a href="/admission">
+        <div class="tp-caption blackboard-text fade " style="color:blue; font-size: 28px;"
              data-x="120"
              data-y="120"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
+             data-easing="easeOutExpo" style="font-size: 40px;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
+        </div>
 </a>
 
 
