@@ -49,7 +49,7 @@
         </div>
 
 <!-- 第一張 Cloud -->
-<a href="/admission">
+<a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="770"
              data-y="50"
@@ -58,18 +58,18 @@
              data-easing="easeOutExpo">
           <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
              data-x="820"
              data-y="100"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
              data-x="850"
              data-y="150"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
 </a>
 
       </li>
@@ -81,7 +81,7 @@
              alt="首頁形像主視覺">
 
 <!-- 第二張 Cloud -->
-<a href="/admission">
+<a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="10"
              data-y="20"
@@ -90,18 +90,18 @@
              data-easing="easeOutExpo">
           <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
              data-x="70"
              data-y="70"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
              data-x="80"
              data-y="120"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
 </a>
 
       </li>
@@ -113,7 +113,7 @@
              alt="首頁形像主視覺">
 
 <!-- 第三張 Cloud -->
-<a href="/admission">
+<a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="50"
              data-y="20"
@@ -122,18 +122,18 @@
              data-easing="easeOutExpo">
           <img src="/++resource++tpa.content/cloud.png" alt="首頁形像主視覺">
         </div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 32px; line-height:30px"
              data-x="110"
              data-y="70"
              data-speed="1500"
              data-start="1000"
-             data-easing="easeOutExpo" style="font-size: 50px;">招生訊息</div>
-        <div class="tp-caption blackboard-text fade " style="color:#D3DE28;"
+             data-easing="easeOutExpo" style="font-size: 50px;">網路招生<br>&nbsp;&nbsp;報名系統</div>
+        <div class="tp-caption blackboard-text fade " style="color:#D3DE28; font-size: 34px; line-height:45px"
              data-x="120"
              data-y="120"
              data-speed="1500"
              data-start="1500"
-             data-easing="easeOutExpo" style="font-size: 40px;">Come on!</div>
+             data-easing="easeOutExpo" style="font-size: 40px;">&nbsp;&nbsp;&nbsp;&nbsp;Come on!</div>
 </a>
 
 
