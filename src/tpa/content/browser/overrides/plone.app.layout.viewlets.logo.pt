@@ -19,7 +19,7 @@ portal = api.portal.get()
                                                 <ul class="nav nav-pills nav-top">
 
     <a href="https://www.facebook.com/TaiwanPoliceCollege/" style="float:left" target="_blank">
-        <img src="/++resource++tpa.content/fblink.png" style="width:100px; padding-top:5px; margin-right:80px"/>
+        <img src="/++resource++tpa.content/fblink.png" alt="facebook" style="width:100px; padding-top:5px; margin-right:80px"/>
     </a>
 <tal:show_nav condition="python:not portal.absolute_url().startswith('http://notes')">
                                                         <li>
