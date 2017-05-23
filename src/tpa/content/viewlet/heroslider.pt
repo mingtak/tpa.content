@@ -49,6 +49,7 @@
         </div>
 
 <!-- 第一張 Cloud -->
+<!--
 <a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="570"
@@ -67,6 +68,7 @@
              &nbsp;網路招生<br>&nbsp;&nbsp;&nbsp;&nbsp;報名系統<br>
              &nbsp;&nbsp;&nbsp;<u style="font-size:0.55em; color:red">准考證下載日期:5月12日至5月21日</u>
         </div>
+
 </a>
 <a href="/admission">
         <div class="tp-caption blackboard-text fade " style="color:blue; font-size: 28px;"
@@ -77,7 +79,7 @@
              data-easing="easeOutExpo"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
         </div>
 </a>
-
+-->
       </li>
 
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
@@ -86,7 +88,9 @@
              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat"
              alt="首頁形像主視覺">
 
+
 <!-- 第二張 Cloud -->
+<!--
 <a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="10"
@@ -115,7 +119,7 @@
              data-easing="easeOutExpo" style="font-size: 40px;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
         </div>
 </a>
-
+-->
       </li>
 
       <li data-transition="fade" data-slotamount="5" data-masterspeed="1000" >
@@ -125,6 +129,7 @@
              alt="首頁形像主視覺">
 
 <!-- 第三張 Cloud -->
+<!--
 <a href="https://admissions.tpa.edu.tw/" target="_blank">
         <div class="tp-caption fade"
              data-x="50"
@@ -153,7 +158,7 @@
              data-easing="easeOutExpo" style="font-size: 40px;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招生訊息
         </div>
 </a>
-
+-->
 
 
 
