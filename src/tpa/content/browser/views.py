@@ -34,7 +34,7 @@ class SearchResult(BrowserView):
 #        if True:
             request.response.redirect('/')
             return
-        self.brain = catalog({'SearchableText':string.split()})
+        self.brain = catalog({'SearchableText':string.split(), 'Type':['Page', 'News Item']})
         self.brain
         return self.index()
 
